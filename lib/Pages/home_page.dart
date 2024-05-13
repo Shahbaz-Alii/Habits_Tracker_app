@@ -322,7 +322,7 @@ class HomePageState extends State<HomePage> {
   }
   void deleteHabit(int index){
     setState(() {
-      // delete specific habit
+      // delete a specific habit
       HabitDatabase.habitsData.removeAt(index);
     });
     HDB.updateData();
