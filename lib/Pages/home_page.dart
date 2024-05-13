@@ -25,7 +25,7 @@ class HomePage extends StatefulWidget{
 
 }
 class HomePageState extends State<HomePage> {
-  HabitDatabase hDB =  HabitDatabase();
+  HabitDatabase hdb =  HabitDatabase();
   final _myBox = Hive.box('Habit_Database');
   TextEditingController nameController = TextEditingController();
   TextEditingController noteController = TextEditingController();
@@ -41,18 +41,18 @@ class HomePageState extends State<HomePage> {
     // if there is no current habit list, then it is the 1st time ever open the app
     // then create default data
     if (_myBox.get("CURRENT_HABIT_LIST") == null) {
-      hDB.defaultData();
+      hdb.defaultData();
     }
     else
     {
       // there already exists data, this is not the first time
-      hDB.loadData();
-      hDB.loadCheckbox();
+      hdb.loadData();
+      hdb.loadCheckbox();
 
     }
 
     // update the database
-    hDB.updateData();
+    hdb.updateData();
 
     super.initState();
   }
@@ -304,7 +304,7 @@ class HomePageState extends State<HomePage> {
       questionController.clear();
       //  Close the Dialog Box
       Navigator.of(context).pop();
-      hDB.updateData();
+      hdb.updateData();
 
     }
   }
@@ -317,7 +317,7 @@ class HomePageState extends State<HomePage> {
         });
         nameController.clear();
         Navigator.of(context).pop();
-        hDB.updateData();
+        hdb.updateData();
       }
   }
   void deleteHabit(int index){
@@ -325,7 +325,7 @@ class HomePageState extends State<HomePage> {
       // delete a specific habit
       HabitDatabase.habitsData.removeAt(index);
     });
-    hDB.updateData();
+    hdb.updateData();
   }
 
   void cancelDialogBox(){
@@ -340,14 +340,14 @@ class HomePageState extends State<HomePage> {
       // ture or false values are assign to arrayList
       HabitDatabase.habitsData[index][1] = value;
     });
-    hDB.updateData();
+    hdb.updateData();
   }
   // dropdown button check box tap data changing
   void checkBoxTap(bool? value, int index){
     setState(() {
       HabitDatabase.checkBoxData[index] = value;
     });
-    hDB.updateCheckbox();
+    hdb.updateCheckbox();
   }
 
   void manageHabitSettings(int index){
