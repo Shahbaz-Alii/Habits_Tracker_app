@@ -1,16 +1,31 @@
-# habits_tracker
+# Habits_Tracker
 
-A new Flutter project.
+Simple Habit tracking app using Flutter cross framework which allows a user to add habits and their details to go off during the day.
 
-## Getting Started
+### Key Features:
 
-This project is a starting point for a Flutter application.
+1. User-Friendly Interface
 
-A few resources to get you started if this is your first Flutter project:
+2. Quick Habit Editing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Quick Create with Template
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Sorting by date and DayTime
+
+5.  Intuitive Habit Deletion
+
+6.  Local Hive Data Storage
+
+7.  Habit Customization
+
+
+### Screenshot
+
+This project is built using the Flutter framework, a popular and powerful cross-platform development tool.
+<br>
+<br>
+<img src="https://github.com/Shahbaz-Alii/Habits_Tracker_app/assets/168781402/0c1038ad-613e-4952-bcbf-2d7297e32e36" width="300" />
+<img src="https://github.com/Shahbaz-Alii/Habits_Tracker_app/assets/168781402/f9b81038-b476-4b95-b398-3074205b0b3e" width="300" />
+<br>
+<img src="https://github.com/Shahbaz-Alii/Habits_Tracker_app/assets/168781402/26e6719a-ccc0-46bc-bb25-68b5e2037c69" width="300" />
+<img src="https://github.com/Shahbaz-Alii/Habits_Tracker_app/assets/168781402/5f0ae076-ce55-466d-b4a9-2aa97ac5933d" width="300" />
